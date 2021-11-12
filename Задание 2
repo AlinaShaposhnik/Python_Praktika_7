@@ -1,7 +1,8 @@
-def nested_sum (t):
+def cumsum(a):
+    T = []
     summa = 0
-    for i in range (len(t)):
-        a = t[i]
-        b = sum (a)
-        summa += b
-    return summa
+    for i in range (len(a)):
+        a[i] += summa
+        summa = a[i]
+        T = append(a[i])
+    return T
